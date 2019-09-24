@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Advanced CSV",
+		"AdvancedNewFile",
+		"Anaconda",
+		"ayu",
+		"BracketHighlighter",
+		"Package Control",
+		"PipenvPath",
+		"PyYapf Python Formatter",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"SublimeLinter-pyflakes"
+	]
+}
