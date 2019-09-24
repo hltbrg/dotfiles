@@ -24,6 +24,7 @@ install_zsh() {
         zsh-syntax-highlighting
 
     usermod -s $(which zsh) $SUDO_USER
+    chsh -s $(which zsh) $SUDO_USER
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -34,6 +35,5 @@ install_zsh() {
 
 
 }
-
 check_is_sudo
 install_zsh > /dev/null
