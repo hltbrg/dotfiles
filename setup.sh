@@ -8,6 +8,6 @@ check_is_sudo() {
 }
 
 check_is_sudo
-bash ./sublime.sh
+bash ./programs.sh
 bash ./gnome.sh
 bash ./zsh.sh
