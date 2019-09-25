@@ -9,11 +9,18 @@ check_is_sudo() {
 
 # Install zsh, plugins, and fonts.
 install_zsh() {
-    (
-        #git clone https://github.com/ryanoasis/nerd-fonts.git
-        cd ${HOME}/nerd-fonts
-        ./install.sh RobotoMono
-    ) &
+
+#    (
+#        git clone https://github.com/ryanoasis/nerd-fonts.git
+#        cd ${HOME}/nerd-fonts
+#        ./install.sh RobotoMono
+#    ) &
+#    (
+#        mkdir -p ~/.local/share/fonts
+#        cd ~/.local/share/fonts
+#        curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+#    )
+
 
     apt-get update > /dev/null || true
     apt-get install -y \
@@ -24,6 +31,7 @@ install_zsh() {
         zsh-syntax-highlighting
 
     usermod -s $(which zsh) $SUDO_USER
+    chsh -s $(which zsh) $SUDO_USER
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -34,6 +42,5 @@ install_zsh() {
 
 
 }
-
 check_is_sudo
 install_zsh > /dev/null

@@ -14,6 +14,11 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status
                                     virtualenv
                                     docker_machine
                                     )
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=' \uf101 '
+POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uF408 '
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
@@ -34,3 +39,5 @@ autoload -U compinit
 compinit
 
 alias d="dirs -v | head -10"
+
+

@@ -8,9 +8,9 @@ check_is_sudo() {
 }
 
 install_gnome_extensions() {
-    apt install -y gnome-tweak-tool
-    apt install -y gnome-shell-extensions
-    apt install -y chrome-gnome-shell
+    apt-get install -y gnome-tweak-tool
+    apt-get install -y gnome-shell-extensions
+    apt-get install -y chrome-gnome-shell
     wget -O ~/dotfiles/gnome-shell-extension-installer "https://github.com/brunelli/gnome-shell-extension-installer/raw/master/gnome-shell-extension-installer"
     chmod +x ~/dotfiles/gnome-shell-extension-installer
     mv ~/dotfiles/gnome-shell-extension-installer /usr/bin/
