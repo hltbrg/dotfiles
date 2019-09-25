@@ -9,11 +9,11 @@ check_is_sudo() {
 
 # Install zsh, plugins, and fonts.
 install_zsh() {
-    (
+    #(
         #git clone https://github.com/ryanoasis/nerd-fonts.git
-        cd ${HOME}/nerd-fonts
-        ./install.sh RobotoMono
-    ) &
+        #cd ${HOME}/nerd-fonts
+        #./install.sh RobotoMono
+    #) &
 
     apt-get update > /dev/null || true
     apt-get install -y \
