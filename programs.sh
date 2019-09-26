@@ -40,13 +40,9 @@ install_sublime() {
     install_sublime_packages
 }
 
-install_others() {
-
-}
 
 
 check_is_sudo
 install_brave
 install_gimp
 install_sublime
-install_others
