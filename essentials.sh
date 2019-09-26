@@ -8,4 +8,7 @@ check_is_sudo() {
 }
 
 check_is_sudo
+apt-get update
 apt-get install -y apt-transport-https curl
+apt-get install -y python3-pip
+pip3 install pipenv
