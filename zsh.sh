@@ -15,11 +15,11 @@ install_zsh() {
 #        cd ${HOME}/nerd-fonts
 #        ./install.sh RobotoMono
 #    ) &
-#    (
-#        mkdir -p ~/.local/share/fonts
-#        cd ~/.local/share/fonts
-#        curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
-#    )
+    (
+        mkdir -p ~/.local/share/fonts
+        cd ~/.local/share/fonts
+        curl -fLo "UbuntuMono Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/UbuntuMono/Regular/complete/Ubuntu%20Mono%20Nerd%20Font%20Complete.ttf?raw=true
+    )
 
 
     apt-get update > /dev/null || true
@@ -30,8 +30,7 @@ install_zsh() {
         fonts-powerline \
         zsh-syntax-highlighting
 
-    usermod -s $(which zsh) $SUDO_USER
-    chsh -s $(which zsh) $SUDO_USER
+    usermod -s $(which zsh) $(whoami)
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 

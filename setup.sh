@@ -8,6 +8,7 @@ check_is_sudo() {
 }
 
 check_is_sudo
+bash ./essentials.sh
 bash ./programs.sh
 bash ./gnome.sh
 bash ./zsh.sh
