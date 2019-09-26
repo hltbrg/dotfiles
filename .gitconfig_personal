@@ -1,0 +1,27 @@
+[user]
+	name = hltbrg
+	email = hltbrg@gmail.com
+[core]
+	editor = subl
+[alias]
+    co  = checkout           # Checkout a branch.
+    cob = checkout -b        # Checkout a new not yet existing branch.
+    f   = fetch -p           # Fetch from a repository and prune any remote-tracking references that no longer exist on the remote.
+    c   = commit             # Commit you changes.
+    cm  = commit -m          # Commit with message.
+    cma = commit -am         # Add all and commit with message.
+    p   = push               # Push you changes to a remote.
+    ba  = branch -a          # List both remote-tracking branches and local branches.
+    bd  = branch -d          # Delete a branch only if it has been merged.
+    bD  = branch -D          # Force delete a branch.
+    dc  = diff --cached      # Display the staged changes.
+    ec = config --global -e  # Open .gitlog.
+    st = status -sb          # Status of the commit you’re working on.
+    ap = add -p              # Add parts of your changes.
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    slog = log --oneline --decorate --graph --all
+    llog = log --pretty=format:'%C(auto)%h %C(yellow)%C(red)%ad %C(blue)%aN %aE %C(auto)%d%C(green) %s' --date=short
+    plog = log --graph --pretty='format:%C(red)%d%C(reset) %C(yellow)%h%C(reset) %ar %C(green)%aN%C(reset) %s'
+    tlog = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    rank = shortlog -sn --no-merges     # Contributors ordered by number of merges.
