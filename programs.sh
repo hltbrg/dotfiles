@@ -14,11 +14,6 @@ install_brave() {
     apt-get update
     apt-get install brave-browser
 }
-install_gimp() {
-    add-apt-repository ppa:otto-kesselgulasch/gimp
-    apt-get update
-    apt-get install -y gimp
-}
 
 install_sublime_packages() {
     mkdir ~/.config/sublime-text-3/Installed\ Packages/
@@ -44,5 +39,5 @@ install_sublime() {
 
 check_is_sudo
 install_brave
-install_gimp
+snap install gimp
 install_sublime
