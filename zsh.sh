@@ -30,7 +30,7 @@ install_zsh() {
         fonts-powerline \
         zsh-syntax-highlighting
 
-    usermod -s $(which zsh) $(whoami)
+    usermod -s $(which zsh) $SUDO_USER
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
