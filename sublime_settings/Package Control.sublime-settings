@@ -17,6 +17,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-flake8",
-		"SublimeLinter-pyflakes"
+		"SublimeLinter-pyflakes",
+		"Theme - Afterglow"
 	]
 }
