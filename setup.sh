@@ -8,7 +8,7 @@ check_is_sudo() {
 }
 
 check_is_sudo
-bash ./essentials.sh
-bash ./programs.sh
-bash ./gnome.sh
-bash ./zsh.sh
+bash ~/dotfiles/essentials.sh
+bash ~/dotfiles/programs.sh
+bash ~/dotfiles/gnome.sh
+bash ~/dotfiles/zsh.sh
