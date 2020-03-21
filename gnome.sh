@@ -19,7 +19,8 @@ setup_gnome() {
     run-in-user-session gsettings set org.gnome.desktop.calendar show-weekdate true
     run-in-user-session gsettings set org.gnome.shell favorite-apps ['brave-browser.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'sublime-text_subl.desktop']
     run-in-user-session gsettings set org.gnome.shell.app-switcher current-workspace-only true
-    wget -O /usr/share/backgrounds/background.jpg "https://avante.biz/wp-content/uploads/Gradient-Wallpaper/Gradient-Wallpaper-009.jpg"
+    #wget -O /usr/share/backgrounds/background.jpg "https://avante.biz/wp-content/uploads/Gradient-Wallpaper/Gradient-Wallpaper-009.jpg"
+    wget -O /usr/share/backgrounds/background.jpg "https://www.pexels.com/photo/1183099/download/?search_query=&tracking_id=olecxwcsutq"
     run-in-user-session gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/background.jpg'
 }
 
